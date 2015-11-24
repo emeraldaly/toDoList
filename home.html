@@ -12,30 +12,20 @@
 </head>
 
 <body>
-<div class="col-md-4">
-<h1>Add Tasks:</h1>
-</div>
-<div class="col-md-8">
-<h1>To Do:</h1>
-</div>
-  <div class="container-fluid">
-    <div class="row-fluid">
+  <div class="col-md-4">
+    <h1>Add Tasks:</h1>
+  </div>
+  <div class="col-md-8">
+    <h1>To Do:</h1>
+  </div>
       <div class="col-md-4">
-        <form class="form-inline">
-          <div class="form-group">
             <input type="text" id="addTask" placeholder="Add Task">
-            <input type="submit" id="add" value="Add Task">
-          </div>
-        </form>  
+            <input type="submit" id="add" value="Add Task"> 
       </div>
-    </div> 
-    </div>
-    <div class="row-fluid">
       <div class="col-md-8">
-      <div>
-        <table>
-           <tr>
-             <td id="toDoList"></td>
+        <table id="toDoTable">
+           <tr id="tableRow">
+             <td id="toDoItem"></td>
            </tr>
         </table>
   </div>
