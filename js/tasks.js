@@ -1,5 +1,5 @@
-$(toDoList).ready(function() {
-  alert(hi);
+$(document).ready(function() {
+
 
  //Add Item
 function addTask () {
@@ -20,4 +20,5 @@ $('#toDoList').on('click', '.delete',function(){
 $('#toDoList').on('click', '.check',function(){
     $(this).parent().css("text-decoration", "line-through");
 });
+
 });
