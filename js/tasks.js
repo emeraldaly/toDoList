@@ -5,7 +5,7 @@ $(document).ready(function() {
 function addTask () {
         var text = $('#addTask').val();
         $('#toDoTable').append('<tr>'+
-          '<td>'+ text + ' <input type="checkbox" class="check" value="Check">'+ '<input type="submit" class="done delete" value="Delete">' +'</td>');
+          '<td>'+ text + '</td>' + '<td>' + '<input type="checkbox" class="check" value="Check">'+ '</td>' + '<td>' '<input type="submit" class="done delete pull-right" value="Delete">' +'</td>' + '</tr>');
 };
 
 $(function() {
