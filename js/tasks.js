@@ -1,13 +1,11 @@
-
-
-
 $(document).ready(function() {
 
 
  //Add Item
 function addTask () {
         var text = $('#addTask').val();
-        $('#toDoList').append('<td>'+ text + ' <input type="checkbox" class="check" value="Check">'+ '<input type="submit" class="done delete" value="Delete">' +'</td>');
+        $('#toDoTable').append('<tr>'+
+          '<td>'+ text + ' <input type="checkbox" class="check" value="Check">'+ '<input type="submit" class="done delete" value="Delete">' +'</td>');
 };
 
 $(function() {
@@ -15,7 +13,7 @@ $(function() {
 });
 
   //Delete Item
-$('#toDoList').on('click', '.delete',function(){
+$('#toDoTable').on('click', '.delete',function(){
     $(this).parent().remove();
 });
 
