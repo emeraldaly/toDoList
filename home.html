@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link rel="stylesheet" type="style.css" href="style/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>To Do List</title>
+
+</head>
+
+<body>
+<div class="col-md-4">
+<h1>Add Tasks:</h1>
+</div>
+<div class="col-md-8">
+<h1>To Do:</h1>
+</div>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="col-md-4">
+        <form class="form-inline">
+          <div class="form-group">
+            <input type="text" id="addTask" placeholder="Add Task">
+            <input type="submit" id="add" value="Add Task">
+          </div>
+        </form>  
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="col-md-8">
+        <table>
+          <tbody>
+           <tr>
+             <td id="toDoList"></td>
+           </tr>
+          </tbody>
+        </table>
+  </div>
+  <script src="js/tasks.js"></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+</body>
+</html>
