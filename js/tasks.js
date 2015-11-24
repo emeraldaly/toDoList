@@ -4,7 +4,8 @@ $(document).ready(function() {
  //Add Item
 function addTask () {
         var text = $('#addTask').val();
-        $('#toDoList').append('<td>'+ text + ' <input type="checkbox" class="check" value="Check">'+ '<input type="submit" class="done delete" value="Delete">' +'</td>');
+        $('#toDoTable').append('<tr>'+
+          '<td>'+text +'</td><td><input type="checkbox" class="check" value="Check"></td><td><input type="submit" class="done delete pull-right" value="Delete"></td></tr>');
 };
 
 $(function() {
@@ -12,8 +13,8 @@ $(function() {
 });
 
   //Delete Item
-$('#toDoList').on('click', '.delete',function(){
-    $(this).parent().remove();
+$('#toDoTable').on('click', '.delete',function(){
+    $(this).parent().parent().remove();
 });
 
   //Check Off Item
@@ -22,3 +23,4 @@ $('#toDoList').on('click', '.check',function(){
 });
 
 });
+
