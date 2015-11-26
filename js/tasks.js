@@ -5,7 +5,7 @@ $(document).ready(function() {
 function addTask () {
         var text = $('#addTask').val();
         $('#toDoTable').append('<tr>'+
-          '<td>'+text +'</td><td><input type="checkbox" class="check" value="Check"></td><td><input type="submit" class="done delete pull-right" value="Delete"></td></tr>');
+          '<td>'+ text +'</td><td><input type="checkbox" class="check" value="Check"></td><td><input type="submit" class="done delete pull-right" value="Delete"></td></tr>');
 };
 
 $(function() {
@@ -18,8 +18,11 @@ $('#toDoTable').on('click', '.delete',function(){
 });
 
   //Check Off Item
-$('#toDoList').on('click', '.check',function(){
+$('#toDoTable').on('click', '.check',function(){
     $(this).parent().css("text-decoration", "line-through");
+    $(this).parent().parent().children().eq(0).css("text-decoration", "line-through");
+    $(this).hide();
+    debugger;
 });
 
 });

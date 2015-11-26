@@ -5,10 +5,10 @@ h1 {
 
 body
 {
-  background-image: url("image/footer_lodyas.png");
+  /*background-image: url("../image/footer_lodyas.png");*/
   background-color: gray;
 }
 
-input[type=checkbox]:checked + label.strikethrough{
+.strike{
   text-decoration: line-through;
 }
